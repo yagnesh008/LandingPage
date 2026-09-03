@@ -30,7 +30,7 @@ function Footer({ onConsultationClick }: HeaderProps){
                 </div>
             </div>
             <div className={styles.copyright}>
-                &copy; 2026 Teens Software Solutions. All rights reserved.
+                <h3>&copy; 2026 Teens Software Solutions. All rights reserved.</h3>
             </div>
         </section>
         </>
