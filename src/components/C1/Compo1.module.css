@@ -1,0 +1,607 @@
+/* ===== Design tokens (from original HTML) ===== */
+/* --navy:#0b1630 --blue:#155eef --cyan:#16b3ff --light:#f5f8fc
+   --text:#172033 --muted:#637083 --white:#fff --green:#18a957 */
+
+/* ===== Section 1: What We Build ===== */
+.compoContainer {
+  text-align: center;
+  padding: 65px 0;
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.compoContainer h5 {
+  color: #155eef;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.compoContainer > h1 {
+  font-size: 38px;
+  line-height: 1.15;
+  margin: 8px 0 12px;
+  color: #172033;
+}
+
+.compoContainer > p {
+  color: #637083;
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.compoWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-top: 32px;
+  width: 100%;
+}
+
+.compoWrapper > div {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px;
+  border: 1px solid #e5eaf1;
+  border-radius: 14px;
+  background: #fff;
+}
+
+.compoWrapper > div h1 {
+  margin: 10px 0 7px;
+  font-size: 18px;
+  color: #172033;
+}
+
+.compoWrapper > div p {
+  color: #637083;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.webcamIcon,
+.phoneIcon,
+.cartIcon,
+.settingsIcon {
+  width: 30px;
+  height: 30px;
+  color: #155eef;
+  stroke-width: 1.5;
+}
+
+/* ===== Section 2: Why Teens Software Solutions ===== */
+.section2Bg {
+  width: 100%;
+  background: #f5f8fc;
+}
+.section2Container {
+  text-align: center;
+  padding: 65px 0;
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.section2Container h5 {
+  color: #155eef;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.section2Container > h1 {
+  font-size: 38px;
+  line-height: 1.15;
+  margin: 8px 0 12px;
+  color: #172033;
+}
+
+.numberWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 24px 0 8px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.numberWrapper > div {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  min-height: 180px;
+  background: #fff;
+  border: 1px solid #e5eaf1;
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.numberWrapper > div h1 {
+  display: block;
+  font-size: 30px;
+  color: #155eef;
+  font-weight: 800;
+  margin: 0 0 6px;
+}
+
+.numberWrapper > div p {
+  color: #637083;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ===== Section 3: Simple Process ===== */
+.section3Container {
+  text-align: center;
+  padding: 65px 0;
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.section3Container h5 {
+  color: #155eef;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.section3Container > h1 {
+  font-size: 38px;
+  line-height: 1.15;
+  margin: 8px 0 12px;
+  color: #172033;
+}
+
+.processWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 24px;
+  text-align: left;
+  width: 100%;
+}
+
+.processWrapper > div {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px;
+  background: #f8fafc;
+  border-radius: 14px;
+}
+
+.stepBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #155eef;
+  color: #fff;
+  font-weight: 800;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.processWrapper > div h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+  color: #172033;
+}
+
+.processWrapper > div p {
+  color: #637083;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+/* ---------- Large screens / Desktop ---------- */
+
+@media (min-width: 1200px) {
+  .compoContainer,
+  .section2Container,
+  .section3Container {
+    width: min(1120px, 92%);
+  }
+}
+
+
+/* ---------- Laptop / Medium Desktop ---------- */
+
+@media (max-width: 1199px) {
+  .compoContainer,
+  .section2Container,
+  .section3Container {
+    width: 92%;
+  }
+
+  .compoContainer > h1,
+  .section2Container > h1,
+  .section3Container > h1 {
+    font-size: 34px;
+  }
+
+  .compoWrapper {
+    gap: 15px;
+  }
+
+  .compoWrapper > div {
+    padding: 22px;
+  }
+
+  .numberWrapper {
+    gap: 12px;
+  }
+
+  .numberWrapper > div {
+    padding: 20px;
+  }
+
+  .processWrapper {
+    gap: 15px;
+  }
+
+  .processWrapper > div {
+    padding: 22px;
+  }
+}
+
+
+/* =========================================================
+   TABLET
+   768px - 1023px
+   ========================================================= */
+
+@media (max-width: 1023px) {
+
+  .compoContainer,
+  .section2Container,
+  .section3Container {
+    width: 90%;
+    padding: 55px 0;
+  }
+
+  /* Headings */
+
+  .compoContainer > h1,
+  .section2Container > h1,
+  .section3Container > h1 {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+
+  .compoContainer > p {
+    max-width: 650px;
+    font-size: 15px;
+  }
+
+  /* Cards */
+
+  .compoWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .compoWrapper > div {
+    padding: 22px;
+  }
+
+  .compoWrapper > div h1 {
+    font-size: 17px;
+  }
+
+  .compoWrapper > div p {
+    font-size: 14px;
+  }
+
+  /* Statistics */
+
+  .numberWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .numberWrapper > div {
+    min-height: 160px;
+    padding: 22px;
+  }
+
+  .numberWrapper > div h1 {
+    font-size: 28px;
+  }
+
+  /* Process */
+
+  .processWrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .processWrapper > div {
+    padding: 22px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+   480px - 767px
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .compoContainer,
+  .section2Container,
+  .section3Container {
+    width: 90%;
+    padding: 45px 0;
+  }
+
+  /* Section headings */
+
+  .compoContainer h5,
+  .section2Container h5,
+  .section3Container h5 {
+    font-size: 11px;
+    letter-spacing: 0.8px;
+    margin-bottom: 7px;
+  }
+
+  .compoContainer > h1,
+  .section2Container > h1,
+  .section3Container > h1 {
+    font-size: 28px;
+    line-height: 1.2;
+    margin: 7px 0 10px;
+  }
+
+  .compoContainer > p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  /* What We Build */
+
+  .compoWrapper {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 25px;
+  }
+
+  .compoWrapper > div {
+    padding: 22px;
+    border-radius: 12px;
+  }
+
+  .compoWrapper > div h1 {
+    font-size: 18px;
+    margin: 9px 0 6px;
+  }
+
+  .compoWrapper > div p {
+    font-size: 14px;
+    line-height: 1.55;
+    margin: 0;
+  }
+
+  .webcamIcon,
+  .phoneIcon,
+  .cartIcon,
+  .settingsIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Why Teens */
+
+  .numberWrapper {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .numberWrapper > div {
+    min-height: 140px;
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .numberWrapper > div h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+  }
+
+  .numberWrapper > div p {
+    font-size: 13px;
+  }
+
+  /* Simple Process */
+
+  .processWrapper {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .processWrapper > div {
+    padding: 22px;
+    border-radius: 12px;
+  }
+
+  .stepBadge {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+    margin-bottom: 13px;
+  }
+
+  .processWrapper > div h3 {
+    font-size: 17px;
+    margin-bottom: 7px;
+  }
+
+  .processWrapper > div p {
+    font-size: 14px;
+    line-height: 1.55;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   Below 480px
+   ========================================================= */
+
+@media (max-width: 479px) {
+
+  .compoContainer,
+  .section2Container,
+  .section3Container {
+    width: 92%;
+    padding: 38px 0;
+  }
+
+  .compoContainer h5,
+  .section2Container h5,
+  .section3Container h5 {
+    font-size: 10px;
+    letter-spacing: 0.6px;
+  }
+
+  .compoContainer > h1,
+  .section2Container > h1,
+  .section3Container > h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .compoContainer > p {
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  /* Cards */
+
+  .compoWrapper {
+    gap: 12px;
+    margin-top: 22px;
+  }
+
+  .compoWrapper > div {
+    padding: 19px;
+  }
+
+  .compoWrapper > div h1 {
+    font-size: 17px;
+  }
+
+  .compoWrapper > div p {
+    font-size: 13px;
+  }
+
+  /* Statistics */
+
+  .numberWrapper {
+    gap: 12px;
+  }
+
+  .numberWrapper > div {
+    min-height: 125px;
+    padding: 18px;
+  }
+
+  .numberWrapper > div h1 {
+    font-size: 25px;
+  }
+
+  .numberWrapper > div p {
+    font-size: 12px;
+  }
+
+  /* Process */
+
+  .processWrapper {
+    gap: 12px;
+  }
+
+  .processWrapper > div {
+    padding: 19px;
+  }
+
+  .stepBadge {
+    width: 32px;
+    height: 32px;
+    font-size: 13px;
+    margin-bottom: 11px;
+  }
+
+  .processWrapper > div h3 {
+    font-size: 16px;
+  }
+
+  .processWrapper > div p {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   Below 360px
+   ========================================================= */
+
+@media (max-width: 359px) {
+
+  .compoContainer,
+  .section2Container,
+  .section3Container {
+    width: 94%;
+    padding: 32px 0;
+  }
+
+  .compoContainer > h1,
+  .section2Container > h1,
+  .section3Container > h1 {
+    font-size: 22px;
+  }
+
+  .compoContainer > p {
+    font-size: 12px;
+  }
+
+  .compoWrapper > div,
+  .processWrapper > div {
+    padding: 16px;
+  }
+
+  .numberWrapper > div {
+    min-height: 115px;
+    padding: 15px;
+  }
+
+  .numberWrapper > div h1 {
+    font-size: 23px;
+  }
+}

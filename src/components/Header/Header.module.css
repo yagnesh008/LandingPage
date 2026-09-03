@@ -1,0 +1,290 @@
+/* =========================================================
+   HEADER
+========================================================= */
+
+.headContainer {
+    width: 100%;
+    height: 82px;
+
+    background-color: #ffffff;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px 0 20px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 1000;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.logo {
+    width: 150px;
+    height: 50px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.headTitle {
+    position: absolute;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #07142f;
+
+    font-size: 21px;
+    font-weight: 700;
+
+    margin: 0;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.headBtn {
+    margin-left: auto;
+
+    background-color: #1765ed;
+    color: #ffffff;
+
+    border: none;
+    border-radius: 9px;
+
+    padding: 14px 25px;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    white-space: nowrap;
+
+    flex-shrink: 0;
+
+    box-sizing: border-box;
+
+    transition: background-color 0.2s ease;
+}
+
+.headBtn:hover {
+    background-color: #0f56d2;
+}
+
+
+/* =========================================================
+   LAPTOP / TABLET HEADER
+   768px - 1199px
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .headContainer {
+        height: 78px;
+
+        padding: 0 24px 0 18px;
+    }
+
+    .logo {
+        width: 135px;
+        height: 46px;
+    }
+
+    .headTitle {
+        font-size: 18px;
+
+        left: 50%;
+        transform: translateX(-50%);
+
+        margin: 0;
+    }
+
+    .headBtn {
+        margin-left: auto;
+
+        padding: 12px 19px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================================
+   TABLET CONSULTATION
+   768px - 1199px
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .consultationContainer {
+        width: 100%;
+
+        min-height: auto;
+        height: auto;
+
+        margin-top: 0;
+
+        padding: 45px 5% 50px;
+
+        gap: 40px;
+
+        align-items: center;
+
+        box-sizing: border-box;
+    }
+
+    .consultationWrapper {
+        width: 52%;
+
+        max-width: none;
+
+        margin-top: 0;
+    }
+
+    .consultationWrapper h3 {
+        font-size: 12px;
+
+        padding: 8px 14px;
+    }
+
+    .consultationWrapper h1 {
+        font-size: 42px;
+
+        line-height: 1.1;
+
+        margin: 18px 0;
+    }
+
+    .consultationWrapper p {
+        font-size: 15px;
+
+        line-height: 1.5;
+    }
+
+    .consultationWrapper ul {
+        gap: 14px 20px;
+    }
+
+    .consultationForm {
+        width: 48%;
+
+        max-width: 500px;
+
+        padding: 25px 22px;
+
+        border-radius: 16px;
+
+        box-sizing: border-box;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   480px - 767px
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .headContainer {
+        height: 64px;
+
+        padding: 0 14px;
+
+        gap: 10px;
+    }
+
+    .logo {
+        width: 100px;
+        height: 36px;
+    }
+
+    /* Hide title on mobile */
+    .headTitle {
+        display: none;
+    }
+
+    .headBtn {
+        margin-left: auto;
+
+        padding: 9px 13px;
+
+        font-size: 12px;
+
+        border-radius: 7px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+   Below 480px
+========================================================= */
+
+@media (max-width: 479px) {
+
+    .headContainer {
+        height: 60px;
+
+        padding: 0 10px;
+    }
+
+    .logo {
+        width: 90px;
+        height: 34px;
+    }
+
+    .headBtn {
+        padding: 8px 11px;
+
+        font-size: 11px;
+
+        border-radius: 6px;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   Below 360px
+========================================================= */
+
+@media (max-width: 359px) {
+
+    .headContainer {
+        height: 56px;
+
+        padding: 0 8px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 30px;
+    }
+
+    .headBtn {
+        padding: 7px 9px;
+
+        font-size: 10px;
+    }
+}

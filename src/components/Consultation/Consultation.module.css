@@ -1,0 +1,796 @@
+.consultationContainer {
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 60px;
+
+    background: linear-gradient(
+        110deg,
+        #071a42 0%,
+        #0d2c63 55%,
+        #123b82 100%
+    );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    gap: 70px;
+
+    padding: 70px 11% 70px;
+
+    box-sizing: border-box;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ================= LEFT CONTENT ================= */
+
+.consultationWrapper {
+    width: 55%;
+    max-width: 680px;
+
+    margin-top: 70px;
+}
+
+.consultationWrapper h3 {
+    display: inline-flex;
+    align-items: center;
+
+    margin: 0 0 25px;
+    padding: 9px 15px;
+
+    color: #ffffff;
+
+    background: rgba(255, 255, 255, 0.10);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 25px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.consultationWrapper h1 {
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: 62px;
+    line-height: 1.07;
+
+    font-weight: 700;
+
+    letter-spacing: -1.5px;
+}
+
+
+.consultationWrapper p {
+    margin: 0 0 30px;
+
+    color: #dbe7ff;
+
+    font-size: 18px;
+    line-height: 1.65;
+
+    font-weight: 400;
+}
+
+
+/* ================= CHECK LIST ================= */
+
+.consultationWrapper ul {
+    list-style: none;
+
+    padding: 0;
+    margin: 0;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    column-gap: 35px;
+    row-gap: 18px;
+}
+
+
+.consultationWrapper li {
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+
+.checkIcon {
+    width: 18px;
+    height: 18px;
+
+    color: #22d477;
+
+    stroke-width: 3;
+
+    flex-shrink: 0;
+}
+
+
+/* ================= FORM CARD ================= */
+
+.consultationForm {
+    width: 460px;
+
+    background: #ffffff;
+
+    padding: 32px 28px 30px;
+
+    box-sizing: border-box;
+
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+}
+
+
+/* FORM HEADING */
+
+.consultationForm h2 {
+    margin: 0 0 12px;
+
+    color: #182238;
+
+    font-size: 28px;
+    line-height: 1.2;
+
+    font-weight: 700;
+}
+
+
+/* FORM DESCRIPTION */
+
+.consultationForm > p {
+    margin: 0 0 25px;
+
+    color: #64748b;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= FORM ================= */
+
+.consultationForm form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.consultationForm form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.consultationForm label {
+    display: none;
+}
+
+
+/* ================= INPUTS ================= */
+
+.consultationForm input,
+.consultationForm select,
+.consultationForm textarea {
+    width: 100%;
+
+    padding: 15px 14px;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d5dce8;
+
+    border-radius: 7px;
+
+    background: #ffffff;
+
+    color: #1e293b;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+.consultationForm input::placeholder,
+.consultationForm textarea::placeholder {
+    color: #777777;
+}
+
+
+.consultationForm input:focus,
+.consultationForm select:focus,
+.consultationForm textarea:focus {
+    border-color: #1765ed;
+}
+
+
+/* ================= SELECT ================= */
+
+.consultationForm select {
+    cursor: pointer;
+
+    color: #111827;
+}
+
+
+/* ================= LIVE DOT ================= */
+
+.liveWrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #18a957;
+}
+
+.dot {
+    display: inline-block;
+    vertical-align: middle;
+
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+    background: #18a957;
+
+    position: relative;
+
+    margin-right: 2px;
+}
+
+.dot::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    background: #18a957;
+
+    animation: pulse 1.6s ease-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(2.8);
+        opacity: 0;
+    }
+}
+
+
+/* ================= TEXTAREA ================= */
+
+.consultationForm textarea {
+    min-height: 85px;
+
+    resize: vertical;
+}
+
+
+/* ================= BUTTON ================= */
+
+.consultationForm button {
+    width: 100%;
+
+    margin-top: 2px;
+
+    padding: 15px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #1765ed;
+
+    color: #ffffff;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+
+.consultationForm button:hover {
+    background: #0d55d3;
+}
+
+
+/* ================= BOTTOM NOTE ================= */
+
+.consultationForm button + p {
+    margin: 12px 0 0;
+
+    text-align: center;
+
+    color: #64748b;
+
+    font-size: 12px;
+
+    line-height: 1.4;
+}
+
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+
+/* ================= LARGE DESKTOP ================= */
+
+@media (min-width: 1400px) {
+
+    .consultationContainer {
+        padding-left: 11%;
+        padding-right: 11%;
+        gap: 80px;
+    }
+
+    .consultationWrapper {
+        width: 55%;
+        max-width: 700px;
+    }
+
+    .consultationWrapper h1 {
+        font-size: 62px;
+    }
+
+    .consultationForm {
+        width: 460px;
+        flex-shrink: 0;
+    }
+}
+
+
+/* ================= LAPTOP ================= */
+/* 1024px - 1399px */
+
+@media (max-width: 1399px) {
+
+    .consultationContainer {
+        padding-left: 6%;
+        padding-right: 6%;
+        gap: 45px;
+    }
+
+    .consultationWrapper {
+        width: auto;
+        flex: 1;
+        max-width: 650px;
+        min-width: 0;
+        margin-top: 50px;
+    }
+
+    .consultationWrapper h1 {
+        font-size: 50px;
+        line-height: 1.08;
+    }
+
+    .consultationWrapper p {
+        font-size: 17px;
+    }
+
+    .consultationForm {
+        width: 430px;
+        flex-shrink: 0;
+    }
+}
+
+
+/* ================= TABLET ================= */
+/* 768px - 1023px */
+
+@media (max-width: 1023px) {
+
+    .consultationContainer {
+        min-height: auto;
+
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 45px;
+
+        padding: 60px 6% 70px;
+    }
+
+    .consultationWrapper {
+        width: 100%;
+        max-width: 750px;
+
+        margin-top: 20px;
+
+        text-align: center;
+    }
+
+    .consultationWrapper h3 {
+        display: inline-flex;
+        justify-content: center;
+
+        margin-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .consultationWrapper h1 {
+        font-size: 44px;
+        line-height: 1.1;
+
+        letter-spacing: -1px;
+
+        margin-bottom: 22px;
+    }
+
+    .consultationWrapper p {
+        max-width: 680px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .consultationWrapper ul {
+        max-width: 650px;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: left;
+
+        column-gap: 25px;
+        row-gap: 16px;
+    }
+
+    .consultationForm {
+        width: 100%;
+        max-width: 550px;
+
+        padding: 30px 27px;
+    }
+
+    .dot {
+        width: 7px;
+        height: 7px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+/* 480px - 767px */
+
+@media (max-width: 767px) {
+
+    .consultationContainer {
+        width: 100%;
+        min-height: auto;
+        margin-top: 25px;
+        padding: 45px 20px 55px;
+        gap: 35px;
+    }
+
+    /* ---------- LEFT CONTENT ---------- */
+
+    .consultationWrapper {
+        width: 100%;
+
+        margin-top: 10px;
+
+        text-align: left;
+    }
+
+    .consultationWrapper h3 {
+        display: inline-flex;
+        justify-content: flex-start;
+
+        margin-bottom: 18px;
+
+        padding: 8px 12px;
+
+        font-size: 11px;
+
+        line-height: 1.3;
+    }
+
+    .consultationWrapper h1 {
+        font-size: 36px;
+
+        line-height: 1.12;
+
+        letter-spacing: -0.8px;
+
+        margin-bottom: 20px;
+    }
+
+    .consultationWrapper p {
+        margin-bottom: 25px;
+
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+    /* ---------- CHECK LIST ---------- */
+
+    .consultationWrapper ul {
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+
+        width: 100%;
+    }
+
+    .consultationWrapper li {
+        gap: 8px;
+
+        font-size: 14px;
+    }
+
+    .checkIcon {
+        width: 17px;
+        height: 17px;
+    }
+
+    /* ---------- LIVE DOT ---------- */
+
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    /* ---------- FORM ---------- */
+
+    .consultationForm {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 25px 20px 24px;
+
+        border-radius: 15px;
+    }
+
+    .consultationForm h2 {
+        font-size: 25px;
+
+        line-height: 1.2;
+
+        margin-bottom: 10px;
+    }
+
+    .consultationForm > p {
+        font-size: 14px;
+
+        line-height: 1.55;
+
+        margin-bottom: 21px;
+    }
+
+    .consultationForm form {
+        gap: 12px;
+    }
+
+    .consultationForm input,
+    .consultationForm select,
+    .consultationForm textarea {
+        padding: 14px 13px;
+
+        font-size: 14px;
+    }
+
+    .consultationForm textarea {
+        min-height: 90px;
+    }
+
+    .consultationForm button {
+        padding: 14px;
+
+        font-size: 15px;
+    }
+
+    .consultationForm button + p {
+        font-size: 11px;
+    }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+/* Below 480px */
+
+@media (max-width: 479px) {
+
+    .consultationContainer {
+        padding: 38px 15px 45px;
+        margin-top: 25px;
+        gap: 30px;
+    }
+
+    .consultationWrapper {
+        margin-top: 5px;
+    }
+
+    .consultationWrapper h3 {
+        padding: 7px 10px;
+
+        font-size: 9px;
+
+        letter-spacing: 0.2px;
+    }
+
+    .consultationWrapper h1 {
+        font-size: 30px;
+
+        line-height: 1.12;
+
+        letter-spacing: -0.6px;
+
+        margin-bottom: 18px;
+    }
+
+    .consultationWrapper p {
+        font-size: 14px;
+
+        line-height: 1.55;
+
+        margin-bottom: 22px;
+    }
+
+    .consultationWrapper ul {
+        gap: 11px;
+    }
+
+    .consultationWrapper li {
+        font-size: 13px;
+    }
+
+    .checkIcon {
+        width: 16px;
+        height: 16px;
+    }
+
+    .dot {
+        width: 6px;
+        height: 6px;
+    }
+
+    /* ---------- FORM ---------- */
+
+    .consultationForm {
+        padding: 22px 17px 21px;
+
+        border-radius: 14px;
+    }
+
+    .consultationForm h2 {
+        font-size: 22px;
+    }
+
+    .consultationForm > p {
+        font-size: 13px;
+
+        margin-bottom: 18px;
+    }
+
+    .consultationForm form {
+        gap: 11px;
+    }
+
+    .consultationForm input,
+    .consultationForm select,
+    .consultationForm textarea {
+        padding: 13px 12px;
+
+        font-size: 13px;
+
+        border-radius: 6px;
+    }
+
+    .consultationForm textarea {
+        min-height: 80px;
+    }
+
+    .consultationForm button {
+        padding: 13px;
+
+        font-size: 14px;
+    }
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+/* Below 360px */
+
+@media (max-width: 359px) {
+
+    .consultationContainer {
+        padding: 32px 12px 40px;
+        margin-top: 25px;
+        gap: 27px;
+    }
+
+    .consultationWrapper h3 {
+        font-size: 8px;
+
+        padding: 6px 8px;
+    }
+
+    .consultationWrapper h1 {
+        font-size: 27px;
+    }
+
+    .consultationWrapper p {
+        font-size: 13px;
+    }
+
+    .consultationWrapper li {
+        font-size: 12px;
+    }
+
+    .dot {
+        width: 5px;
+        height: 5px;
+    }
+
+    .consultationForm {
+        padding: 20px 14px;
+    }
+
+    .consultationForm h2 {
+        font-size: 20px;
+    }
+
+    .consultationForm > p {
+        font-size: 12px;
+    }
+
+    .consultationForm input,
+    .consultationForm select,
+    .consultationForm textarea {
+        padding: 12px 10px;
+
+        font-size: 12px;
+    }
+
+    .consultationForm button {
+        padding: 13px;
+
+        font-size: 13px;
+    }
+}

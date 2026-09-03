@@ -1,0 +1,501 @@
+.footer {
+  background: #0b1630;
+  color: #fff;
+}
+
+/* ===== CTA Section ===== */
+.ctaSection {
+  text-align: center;
+  padding: 80px 40px;
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+.eyebrow {
+  color: #67b5ff;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.ctaHeading {
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 16px;
+  line-height: 1.15;
+}
+
+.ctaText {
+  color: #cbd8f0;
+  font-size: 17px;
+  max-width: 600px;
+  margin: 0 auto 32px;
+  line-height: 1.6;
+}
+
+.ctaButton {
+  display: inline-block;
+  background: #155eef;
+  color: #fff;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ctaButton:hover {
+  background: #0f4bcc;
+}
+
+/* ===== Footer Bottom (full-width background) ===== */
+.footerBottomBg {
+  width: 100%;
+  background: #070f20;
+  color: #b9c4d8;
+  font-size: 13px;
+  padding: 90px 0 30px;
+}
+
+.footerBottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  width: min(1120px, 92%);
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footerLeft h5 {
+  color: #fff;
+  font-weight: 700;
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.footerLeft p {
+  margin: 0;
+  line-height: 1.6;
+  max-width: 420px;
+}
+
+.footerRight {
+  text-align: right;
+}
+
+.footerRight p {
+  margin: 0 0 6px;
+}
+
+.hours {
+  background: rgba(255, 255, 255, 0.08);
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+/* ===== Copyright ===== */
+.copyright {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  color: #6b7b93;
+  font-size: 12px;
+  margin: 20px auto 0;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  width: min(1120px, 92%);
+}
+
+/* ===== Responsive ===== */
+/* =========================================================
+   RESPONSIVE FOOTER
+   ========================================================= */
+
+
+/* ================= LARGE DESKTOP ================= */
+
+@media (min-width: 1200px) {
+
+  .ctaSection {
+    width: min(1120px, 92%);
+  }
+
+  .footerBottom {
+    width: min(1120px, 92%);
+  }
+
+  .copyright {
+    width: min(1120px, 92%);
+  }
+}
+
+
+/* ================= LAPTOP ================= */
+/* 1024px - 1199px */
+
+@media (max-width: 1199px) {
+
+  .ctaSection {
+    width: 92%;
+    padding: 70px 30px;
+    box-sizing: border-box;
+  }
+
+  .ctaHeading {
+    font-size: 38px;
+  }
+
+  .ctaText {
+    font-size: 16px;
+    max-width: 580px;
+  }
+
+  .footerBottom {
+    width: 92%;
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .copyright {
+    width: 92%;
+  }
+}
+
+
+/* ================= TABLET ================= */
+/* 768px - 1023px */
+
+@media (max-width: 1023px) {
+
+  .ctaSection {
+    width: 90%;
+
+    padding: 60px 20px;
+  }
+
+  .eyebrow {
+    font-size: 12px;
+  }
+
+  .ctaHeading {
+    font-size: 34px;
+
+    line-height: 1.2;
+  }
+
+  .ctaText {
+    font-size: 15px;
+
+    max-width: 550px;
+
+    line-height: 1.6;
+
+    margin-bottom: 28px;
+  }
+
+  .ctaButton {
+    padding: 13px 28px;
+
+    font-size: 15px;
+  }
+
+  .footerBottomBg {
+    padding: 65px 0 25px;
+  }
+
+  .footerBottom {
+    width: 90%;
+
+    padding: 0;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 30px;
+  }
+
+  .footerLeft {
+    width: 100%;
+  }
+
+  .footerLeft p {
+    max-width: 600px;
+  }
+
+  .footerRight {
+    text-align: left;
+
+    width: 100%;
+  }
+
+  .copyright {
+    width: 90%;
+
+    margin-top: 25px;
+
+    padding-top: 18px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+/* 480px - 767px */
+
+@media (max-width: 767px) {
+
+  .ctaSection {
+    width: 100%;
+
+    padding: 50px 20px;
+
+    box-sizing: border-box;
+  }
+
+  .eyebrow {
+    font-size: 11px;
+
+    letter-spacing: 0.8px;
+
+    margin-bottom: 9px;
+  }
+
+  .ctaHeading {
+    font-size: 29px;
+
+    line-height: 1.2;
+
+    margin-bottom: 13px;
+  }
+
+  .ctaText {
+    font-size: 14px;
+
+    line-height: 1.55;
+
+    margin-bottom: 25px;
+
+    max-width: 100%;
+  }
+
+  .ctaButton {
+    width: 100%;
+
+    max-width: 280px;
+
+    padding: 13px 20px;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+  }
+
+  /* ---------- Footer bottom ---------- */
+
+  .footerBottomBg {
+    padding: 50px 0 22px;
+  }
+
+  .footerBottom {
+    width: 90%;
+
+    padding: 0;
+
+    flex-direction: column;
+
+    gap: 25px;
+  }
+
+  .footerLeft {
+    width: 100%;
+  }
+
+  .footerLeft h5 {
+    font-size: 14px;
+
+    margin-bottom: 7px;
+  }
+
+  .footerLeft p {
+    max-width: 100%;
+
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+  .footerRight {
+    width: 100%;
+
+    text-align: left;
+  }
+
+  .footerRight p {
+    font-size: 13px;
+
+    margin-bottom: 6px;
+  }
+
+  .hours {
+    padding: 4px 9px;
+
+    font-size: 12px;
+  }
+
+  /* ---------- Copyright ---------- */
+
+  .copyright {
+    width: 90%;
+
+    font-size: 11px;
+
+    line-height: 1.5;
+
+    margin-top: 22px;
+
+    padding-top: 17px;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+/* Below 480px */
+
+@media (max-width: 479px) {
+
+  .ctaSection {
+    padding: 42px 15px;
+  }
+
+  .eyebrow {
+    font-size: 10px;
+
+    letter-spacing: 0.6px;
+  }
+
+  .ctaHeading {
+    font-size: 25px;
+
+    line-height: 1.2;
+  }
+
+  .ctaText {
+    font-size: 13px;
+
+    line-height: 1.55;
+  }
+
+  .ctaButton {
+    max-width: 100%;
+
+    padding: 12px 18px;
+
+    font-size: 13px;
+
+    border-radius: 7px;
+  }
+
+  /* ---------- Footer ---------- */
+
+  .footerBottomBg {
+    padding: 42px 0 20px;
+  }
+
+  .footerBottom {
+    width: 92%;
+
+    gap: 22px;
+  }
+
+  .footerLeft h5 {
+    font-size: 13px;
+  }
+
+  .footerLeft p {
+    font-size: 12px;
+
+    line-height: 1.55;
+  }
+
+  .footerRight p {
+    font-size: 12px;
+  }
+
+  .hours {
+    font-size: 11px;
+
+    padding: 4px 8px;
+  }
+
+  .copyright {
+    width: 92%;
+
+    font-size: 10px;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+  }
+}
+
+
+/* ================= VERY SMALL PHONES ================= */
+/* Below 360px */
+
+@media (max-width: 359px) {
+
+  .ctaSection {
+    padding: 35px 12px;
+  }
+
+  .ctaHeading {
+    font-size: 22px;
+  }
+
+  .ctaText {
+    font-size: 12px;
+  }
+
+  .ctaButton {
+    font-size: 12px;
+
+    padding: 11px 15px;
+  }
+
+  .footerBottomBg {
+    padding: 35px 0 18px;
+  }
+
+  .footerBottom {
+    width: 94%;
+
+    gap: 19px;
+  }
+
+  .footerLeft h5 {
+    font-size: 12px;
+  }
+
+  .footerLeft p,
+  .footerRight p {
+    font-size: 11px;
+  }
+
+  .hours {
+    font-size: 10px;
+  }
+
+  .copyright {
+    width: 94%;
+
+    font-size: 9px;
+
+    padding-top: 13px;
+  }
+}
