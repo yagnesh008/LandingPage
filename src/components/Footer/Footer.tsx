@@ -21,12 +21,12 @@ function Footer({ onConsultationClick }: HeaderProps){
             <div className={styles.footerBottom}>
                 <div className={styles.footerLeft}>
                     <h5>Teens Software Solutions LLP</h5>
-                    <p>Unit No. 303 B, 3rd Floor, New Mark House, Plot No. 56, Patrika Nagar, Madhapur, Hyderabad – 500081</p>
+                    <p>Unit No. 303 B, 3rd Floor, New Mark House, Plot No. 56, Patrika Nagar, Madhapur, Hyderabad - 500081</p>
                 </div>
                 <div className={styles.footerRight}>
                     <p>+91-9032938676</p>
                     <p>info@teensitsolutions.com</p>
-                    <p className={styles.hours}>Mon–Sat: 9:00 AM–6:00 PM</p>
+                    <p className={styles.hours}>Mon-Sat: 9:00 AM-6:00 PM</p>
                 </div>
             </div>
             <div className={styles.copyright}>
