@@ -90,10 +90,12 @@ function Consultation({ inputRef }: ConsultationProps) {
                         <label htmlFor="needs">What do you need?</label>
                         <select id="needs" value={needs} required onChange={(e) => setNeeds(e.target.value)}>
                             <option value="">What do you need?</option>
-                            <option value="website">Website</option>
-                            <option value="mobile-app">Mobile App</option>
+                            <option value="website">Website Development</option>
+                            <option value="mobile-app">Mobile App Development</option>
                             <option value="ecommerce">Ecommerce Platform</option>
-                            <option value="custom-software">Custom Software</option>
+                            <option value="custom-software">Custom Software Development</option>
+                            <option value="digital-marketing / seo">Digital Marketing/ SEO</option>
+                            <option value="other">Other</option>
                         </select>
                     </div>
                     <div>
