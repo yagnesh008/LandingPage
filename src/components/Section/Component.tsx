@@ -1,5 +1,5 @@
 import { Phone, Settings, Globe, ShoppingCart } from "lucide-react";
-import styles from "./Compo1.module.css";
+import styles from "./Component.module.css";
 function Compo(){
     return(
         <>

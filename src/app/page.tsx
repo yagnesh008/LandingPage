@@ -2,7 +2,7 @@
 import { useRef } from "react";
 import Header from '../components/Header/Headers';
 import Footer from '../components/Footer/Footer';
-import Compo1 from '../components/C1/Compo1';
+import Compo1 from '../components/Section/Component';
 import Consultation from '../components/Consultation/Consultation';
 import '../app/golobal.css';
 function Home() {
