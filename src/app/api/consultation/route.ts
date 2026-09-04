@@ -1,9 +1,9 @@
-
 import * as emailjs from "@emailjs/nodejs";
 console.log("KEY CHECK:", process.env.API_email_key_1);
 emailjs.init({
     publicKey: process.env.API_email_key_1!,
     privateKey: process.env.API_email_private_1!, 
+    
 });
 export async function POST(req: Request) {
     try {
@@ -15,7 +15,8 @@ export async function POST(req: Request) {
             throw new Error("Failed to get existing consultations");
         }
 
-        // const existingData = await getResponse.json();
+        const existingData = await getResponse.json();
+        console.log("existingData shape:", Array.isArray(existingData), JSON.stringify(existingData).slice(0, 300));
 
         const response = await fetch(process.env.SHEETDB_API_URL!, {
             method: "POST",
@@ -25,7 +26,7 @@ export async function POST(req: Request) {
             body: JSON.stringify({
                 data: [
                     {
-                        // "S.NO": existingData.length + 1,
+                        "S.NO": existingData.length + 1,
                         Name: data.name,
                         Email: data.email,
                         "Phone Number": data.phonenumber,
@@ -53,7 +54,7 @@ export async function POST(req: Request) {
                 
             );
         } catch (emailError) {
-            // Don't fail the whole request just because the email notification failed
+            
             console.error("EmailJS error:", emailError);
         }
         try {
@@ -69,7 +70,7 @@ export async function POST(req: Request) {
                 
             );
         } catch (emailError) {
-            // Don't fail the whole request just because the email notification failed
+            
             console.error("EmailJS error:", emailError);
         }
 
