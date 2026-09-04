@@ -1,12 +1,9 @@
-import { EmailJSResponseStatus } from "@emailjs/nodejs";
+
 import * as emailjs from "@emailjs/nodejs";
-import { Phone } from "lucide-react";
-import { title } from "process";
 console.log("KEY CHECK:", process.env.API_email_key_1);
 emailjs.init({
     publicKey: process.env.API_email_key_1!,
-    privateKey: process.env.API_email_private_1!, // server-only, keeps requests strict-authenticated
-    
+    privateKey: process.env.API_email_private_1!, 
 });
 export async function POST(req: Request) {
     try {
@@ -18,7 +15,7 @@ export async function POST(req: Request) {
             throw new Error("Failed to get existing consultations");
         }
 
-        const existingData = await getResponse.json();
+        // const existingData = await getResponse.json();
 
         const response = await fetch(process.env.SHEETDB_API_URL!, {
             method: "POST",
@@ -28,7 +25,7 @@ export async function POST(req: Request) {
             body: JSON.stringify({
                 data: [
                     {
-                        "S.NO": existingData.length + 1,
+                        // "S.NO": existingData.length + 1,
                         Name: data.name,
                         Email: data.email,
                         "Phone Number": data.phonenumber,
